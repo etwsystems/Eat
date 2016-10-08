@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>menu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="home">
+  <h1>what would you like to order?</h1>
+
+   
+  <ion-list>
+    <ion-item *ngFor="let post of posts" >
+
+    <button clear item-left (click)="click($event, post);">
+      	<h2>{{post.itemname}}</h2>
+    </button>
+
+    <button clear item-right (click)="remove($event, post);">
+      	<h2>delete</h2>
+    </button>
+
+    </ion-item>
+
+
+
+
+  </ion-list>
+{{test}}
+
+
+ 
+<ion-footer>
+<ion-toolbar>
+
+</ion-toolbar>
+</ion-footer>    
+
+
+</ion-content>

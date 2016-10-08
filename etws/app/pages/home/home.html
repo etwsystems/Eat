@@ -1,0 +1,40 @@
+<ion-content>
+<ion-list>
+    <ion-item>
+    <ion-label floating>Phone Number <small>(for current phone)</small></ion-label>
+    <ion-input type="number" name="ph" [(ngModel)]="data.ph" maxlength= '12' required></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input n type="text" name="username" [(ngModel)]="data.username"  maxlength= '15' required></ion-input>
+<!--           <small [hidden]="username.valid || (username.pristine && !f.submitted)" class="text-danger">
+        Username is required (minimum 5 characters).
+      </small> -->
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password <small>( 5-8 characters)</small></ion-label>
+    <ion-input type="password" name="username" [(ngModel)]="data.password" maxlength= '8' minlength='5' required></ion-input>
+  </ion-item>
+    <ion-item>
+    <ion-label floating>Confirm Password <small>( 5-8 characters)</small></ion-label>
+    <ion-input type="password" name="password2" [(ngModel)]="data.password2" maxlength= '8' minlength='5'  required></ion-input>
+  </ion-item>
+
+    <ion-item>
+    <ion-label floating>Email <small>(must be valid)</small></ion-label>
+    <ion-input type="email" name="email" [(ngModel)]="data.email" maxlength= '35' required></ion-input>
+  </ion-item>
+
+<br>
+
+
+</ion-list>
+
+       <button ion-button class="center" (click)="click2();">Sign Up Now</button>
+
+<ion-list>
+</ion-list>
+</ion-content>

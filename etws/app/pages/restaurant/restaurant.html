@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>menu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="home">
+  <h1>what would you like to order?</h1>
+
+   
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="click($event, item);">
+<!--       <ion-avatar item-left>
+        <img src="{{person.picture.thumbnail}}">
+      </ion-avatar> -->
+<!--       <ion-icon name="star" item-right>
+      </ion-icon> -->
+
+
+      	<h2>{{item.category}}</h2>
+<!--       <p>{{person.itemprice}}</p> -->
+
+    </button>
+  </ion-list>
+
+     
+</ion-content>
+
+
